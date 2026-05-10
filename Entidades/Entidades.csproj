@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A89B66F1-321C-4471-9B43-BD1F1A2E0291}</ProjectGuid>
+    <ProjectGuid>{0C7A49B2-BB45-4E9B-AF2B-DF3CA29FB967}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Manejadores</RootNamespace>
-    <AssemblyName>Manejadores</AssemblyName>
+    <RootNamespace>Entidades</RootNamespace>
+    <AssemblyName>Entidades</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,16 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ManejadorFalsaPosicion.cs" />
-    <Compile Include="ManejadorNewtonRaphson.cs" />
-    <Compile Include="ManejadorSecante.cs" />
+    <Compile Include="IteracionFalsaPosicion.cs" />
+    <Compile Include="IteracionNewtonRaphson.cs" />
+    <Compile Include="IteracionSecante.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Entidades\Entidades.csproj">
-      <Project>{0c7a49b2-bb45-4e9b-af2b-df3ca29fb967}</Project>
-      <Name>Entidades</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

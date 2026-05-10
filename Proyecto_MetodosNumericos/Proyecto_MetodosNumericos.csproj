@@ -107,5 +107,15 @@
   <ItemGroup>
     <None Include="Resources\icons8-vista-ortogonal-34.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{0c7a49b2-bb45-4e9b-af2b-df3ca29fb967}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Manejadores\Manejadores.csproj">
+      <Project>{a89b66f1-321c-4471-9b43-bd1f1a2e0291}</Project>
+      <Name>Manejadores</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
