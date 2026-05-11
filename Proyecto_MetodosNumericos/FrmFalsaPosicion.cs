@@ -1,13 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using Entidades;
-using Manejadores; 
-using System.Text;
-using System.Threading.Tasks;
+using Manejadores;
 using System.Windows.Forms;
 
 namespace Proyecto_MetodosNumericos
@@ -27,17 +20,19 @@ namespace Proyecto_MetodosNumericos
         {
             IteracionFalsaPosicion f = new IteracionFalsaPosicion();
 
-            f.CoeficienteA = double.Parse(txtCoeficienteA.Text);
-            f.CoeficienteB = double.Parse(txtCoeficienteB.Text);
-            f.CoeficienteC = double.Parse(txtCoeficienteC.Text);
-            f.CoeficienteD = double.Parse(txtCoeficienteD.Text);
+            if (mfp.ValidarCampos(txtCoeficienteA, txtCoeficienteB, txtCoeficienteC, txtCoeficienteD, txtXa, txtXb, txtError))
+            {
+                f.CoeficienteA = double.Parse(txtCoeficienteA.Text);
+                f.CoeficienteB = double.Parse(txtCoeficienteB.Text);
+                f.CoeficienteC = double.Parse(txtCoeficienteC.Text);
+                f.CoeficienteD = double.Parse(txtCoeficienteD.Text);
 
-            double xa = double.Parse(txtXa.Text);
-            double xb = double.Parse(txtXb.Text);
-            double error = double.Parse(txtError.Text);
+                double xa = double.Parse(txtXa.Text);
+                double xb = double.Parse(txtXb.Text);
+                double error = double.Parse(txtError.Text);
 
-            mfp.FalsaPosicion(f, xa, xb,error,dtgIteraciones,txtRaiz);
-
+                mfp.FalsaPosicion(f, xa, xb, error, dtgIteraciones, txtRaiz);
+            }
         }
     }
 }
