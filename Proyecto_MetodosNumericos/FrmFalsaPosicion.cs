@@ -14,6 +14,7 @@ namespace Proyecto_MetodosNumericos
             InitializeComponent();
             mfp = new ManejadorFalsaPosicion();
             mfp.ConfigurarTabla(dtgIteraciones);
+            mfp.EstiloTabla(dtgIteraciones);
         }
 
         private void btnCalcular_Click(object sender, EventArgs e)
@@ -33,6 +34,11 @@ namespace Proyecto_MetodosNumericos
 
                 mfp.FalsaPosicion(f, xa, xb, error, dtgIteraciones, txtRaiz);
             }
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
