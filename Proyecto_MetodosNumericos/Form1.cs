@@ -21,5 +21,11 @@ namespace Proyecto_MetodosNumericos
         {
             Application.Exit();
         }
+
+        private void tsbFalsaPosicion_Click(object sender, EventArgs e)
+        {
+            FrmFalsaPosicion fp = new FrmFalsaPosicion();
+            fp.ShowDialog();
+        }
     }
 }
