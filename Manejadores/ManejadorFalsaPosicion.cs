@@ -12,12 +12,12 @@ namespace Manejadores
         {
             tabla.Columns.Clear();
 
-            tabla.Columns.Add("iteracion","NO. ITERACIÓN");
+            tabla.Columns.Add("iteracion","No. Iteración");
             tabla.Columns.Add("xa","Xa");
             tabla.Columns.Add("xb","Xb");
             tabla.Columns.Add("xr","Xr");
-            tabla.Columns.Add("fxa","F(Xa)");
-            tabla.Columns.Add("fxr","F(Xr)");
+            tabla.Columns.Add("fxa","f(Xa)");
+            tabla.Columns.Add("fxr","f(Xr)");
             tabla.AllowUserToAddRows = false;
 
             tabla.ReadOnly = true;

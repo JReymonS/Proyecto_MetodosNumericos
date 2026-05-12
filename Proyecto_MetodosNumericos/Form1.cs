@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Proyecto_MetodosNumericos
@@ -15,11 +8,6 @@ namespace Proyecto_MetodosNumericos
         public Form1()
         {
             InitializeComponent();
-        }
-
-        private void tsbSalir_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
 
         private void tsbSecante_Click(object sender, EventArgs e)
@@ -38,6 +26,11 @@ namespace Proyecto_MetodosNumericos
         {
             FrmFalsaPosicion fp = new FrmFalsaPosicion();
             fp.ShowDialog();
+        }
+
+        private void tsbSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
