@@ -52,6 +52,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmNewtonRaphson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNewtonRaphson.Designer.cs">
+      <DependentUpon>FrmNewtonRaphson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSecante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSecante.Designer.cs">
+      <DependentUpon>FrmSecante.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmFalsaPosicion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +74,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNewtonRaphson.resx">
+      <DependentUpon>FrmNewtonRaphson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSecante.resx">
+      <DependentUpon>FrmSecante.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmFalsaPosicion.resx">
       <DependentUpon>FrmFalsaPosicion.cs</DependentUpon>
@@ -126,8 +144,17 @@
       <Name>Manejadores</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
+    <ItemGroup>
     <None Include="Resources\Compress-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fx1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fx2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

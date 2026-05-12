@@ -45,14 +45,15 @@
             this.tsMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(130)))), ((int)(((byte)(184)))));
             this.tsMenu.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.tsMenu.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.tsMenu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.tsMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsbFalsaPosicion,
             this.tsbSecante,
             this.tsbNewtonR,
             this.tsbSalir});
-            this.tsMenu.Location = new System.Drawing.Point(0, 385);
+            this.tsMenu.Location = new System.Drawing.Point(0, 474);
             this.tsMenu.Name = "tsMenu";
-            this.tsMenu.Size = new System.Drawing.Size(800, 65);
+            this.tsMenu.Size = new System.Drawing.Size(1067, 80);
             this.tsMenu.TabIndex = 0;
             this.tsMenu.Text = "CUADRO DE HERRAMIENTAS";
             // 
@@ -85,6 +86,7 @@
             this.tsbSecante.Name = "tsbSecante";
             this.tsbSecante.Size = new System.Drawing.Size(60, 60);
             this.tsbSecante.Text = "M. Secante";
+            this.tsbSecante.Click += new System.EventHandler(this.tsbSecante_Click);
             // 
             // tsbNewtonR
             // 
@@ -99,6 +101,7 @@
             this.tsbNewtonR.Name = "tsbNewtonR";
             this.tsbNewtonR.Size = new System.Drawing.Size(60, 60);
             this.tsbNewtonR.Text = "M. Newton Raphson";
+            this.tsbNewtonR.Click += new System.EventHandler(this.tsbNewtonR_Click);
             // 
             // tsbSalir
             // 
@@ -123,7 +126,7 @@
             this.gPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.gPanel.Location = new System.Drawing.Point(0, 0);
             this.gPanel.Name = "gPanel";
-            this.gPanel.Size = new System.Drawing.Size(800, 70);
+            this.gPanel.Size = new System.Drawing.Size(1067, 70);
             this.gPanel.TabIndex = 1;
             // 
             // label1
@@ -139,13 +142,15 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(38)))), ((int)(((byte)(44)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.gPanel);
             this.Controls.Add(this.tsMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+
+          
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

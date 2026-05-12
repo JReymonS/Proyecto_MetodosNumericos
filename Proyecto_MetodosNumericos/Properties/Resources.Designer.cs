@@ -83,9 +83,29 @@ namespace Proyecto_MetodosNumericos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_formula_fx_60 {
+        internal static System.Drawing.Bitmap Fx {
             get {
-                object obj = ResourceManager.GetObject("icons8_formula_fx_60", resourceCulture);
+                object obj = ResourceManager.GetObject("Fx", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Fx1 {
+            get {
+                object obj = ResourceManager.GetObject("Fx1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Fx2 {
+            get {
+                object obj = ResourceManager.GetObject("Fx2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
