@@ -71,6 +71,7 @@
             this.tsbFalsaPosicion.Name = "tsbFalsaPosicion";
             this.tsbFalsaPosicion.Size = new System.Drawing.Size(60, 60);
             this.tsbFalsaPosicion.Text = "M. Falsa Posción";
+            this.tsbFalsaPosicion.Click += new System.EventHandler(this.tsbFalsaPosicion_Click);
             // 
             // tsbSecante
             // 
@@ -124,9 +125,8 @@
             this.gPanel.Controls.Add(this.label1);
             this.gPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.gPanel.Location = new System.Drawing.Point(0, 0);
-            this.gPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gPanel.Name = "gPanel";
-            this.gPanel.Size = new System.Drawing.Size(1067, 86);
+            this.gPanel.Size = new System.Drawing.Size(1067, 70);
             this.gPanel.TabIndex = 1;
             // 
             // label1
@@ -134,10 +134,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(9, 21);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(7, 17);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(703, 46);
+            this.label1.Size = new System.Drawing.Size(553, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "CALCULADORA DE MÉTODOS NUMERICOS";
             // 
@@ -150,7 +149,8 @@
             this.Controls.Add(this.gPanel);
             this.Controls.Add(this.tsMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+
+          
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

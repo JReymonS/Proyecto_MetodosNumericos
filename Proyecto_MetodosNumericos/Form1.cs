@@ -33,5 +33,11 @@ namespace Proyecto_MetodosNumericos
             FrmNewtonRaphson nr = new FrmNewtonRaphson();
             nr.ShowDialog();
         }
+        
+        private void tsbFalsaPosicion_Click(object sender, EventArgs e)
+        {
+            FrmFalsaPosicion fp = new FrmFalsaPosicion();
+            fp.ShowDialog();
+        }
     }
 }

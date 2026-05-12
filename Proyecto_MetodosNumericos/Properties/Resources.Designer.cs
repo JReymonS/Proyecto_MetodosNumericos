@@ -65,7 +65,17 @@ namespace Proyecto_MetodosNumericos.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap Compress_white {
             get {
-                object obj = ResourceManager.GetObject("Compress-white", resourceCulture);
+                object obj = ResourceManager.GetObject("Compress_white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_formula_fx_34 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_formula_fx_34", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
