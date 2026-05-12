@@ -21,5 +21,17 @@ namespace Proyecto_MetodosNumericos
         {
             Application.Exit();
         }
+
+        private void tsbSecante_Click(object sender, EventArgs e)
+        {
+            FrmSecante s = new FrmSecante();
+            s.ShowDialog();
+        }
+
+        private void tsbNewtonR_Click(object sender, EventArgs e)
+        {
+            FrmNewtonRaphson nr = new FrmNewtonRaphson();
+            nr.ShowDialog();
+        }
     }
 }

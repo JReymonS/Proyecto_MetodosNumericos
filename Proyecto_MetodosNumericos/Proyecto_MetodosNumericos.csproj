@@ -52,10 +52,28 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmNewtonRaphson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNewtonRaphson.Designer.cs">
+      <DependentUpon>FrmNewtonRaphson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSecante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSecante.Designer.cs">
+      <DependentUpon>FrmSecante.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNewtonRaphson.resx">
+      <DependentUpon>FrmNewtonRaphson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSecante.resx">
+      <DependentUpon>FrmSecante.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -116,6 +134,24 @@
       <Project>{a89b66f1-321c-4471-9b43-bd1f1a2e0291}</Project>
       <Name>Manejadores</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-formula-fx-341.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Compress-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-formula-fx-601.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fx1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fx2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
